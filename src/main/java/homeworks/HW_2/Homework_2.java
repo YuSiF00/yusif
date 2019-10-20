@@ -1,4 +1,4 @@
-package main.homeworks;
+package main.java.homeworks.HW_2;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -46,6 +46,7 @@ public class Homework_2 {
             for(int j = 0;j<6;j++){
                 System.out.print(array[i][j]);
             }
+            System.out.println("");
         }
         System.out.println("");
 
@@ -75,6 +76,7 @@ public class Homework_2 {
                 for(int j = 0;j<6;j++){
                     System.out.print(array[i][j]);
                 }
+                System.out.println("");
             }
         }
 
@@ -82,6 +84,7 @@ public class Homework_2 {
             for(int j = 0;j<6;j++){
                 System.out.print(array[i][j]);
             }
+            System.out.println("");
         }
 
     }
