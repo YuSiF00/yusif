@@ -1,4 +1,4 @@
-package homeworks.HW_6;
+package homeworks.HW_4_5_6_New;
 
 import java.util.ArrayList;
 import java.util.Objects;

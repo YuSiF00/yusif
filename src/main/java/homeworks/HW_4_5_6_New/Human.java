@@ -1,4 +1,4 @@
-package homeworks.HW_6;
+package homeworks.HW_4_5_6_New;
 
 public class Human {
     private String name;
@@ -107,7 +107,6 @@ public class Human {
     public void setFather(Human father) {
         this.father = father;
     }
-
 
     @Override
     protected void finalize() throws Throwable {

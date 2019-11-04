@@ -1,4 +1,4 @@
-package homeworks.HW_6;
+package homeworks.HW_4_5_6_New;
 
 import java.util.ArrayList;
 
@@ -6,18 +6,18 @@ public class MainClass {
     public static void main(String[] args) throws Throwable {
 
         Human human = new Human();
-        Pet pet1 = new Pet(Animal.valueOf("DOG"), "Mestan", 3, 60, new String[]{"sleep", "drink"});
-        Pet pet2 = new Pet(Animal.valueOf("CAT"), "Popsi", 2, 55, new String[]{"sleep","eat"});
+        Pet pet1 = new Pet(Animal.valueOf("DOG"), "Oliver", 3, 60, new String[]{"sleep", "drink"});
+        Pet pet2 = new Pet(Animal.valueOf("CAT"), "Oscar", 2, 55, new String[]{"sleep","eat"});
 
         //System.out.println(pet.toString());
-        Human father = new Human("Kamil", "Huseynov", 1971);
-        Human mother = new Human("Xedice", "Huseynova", 1972);
+        Human father = new Human("Joseph", "Smith", 1971);
+        Human mother = new Human("Stella", "Smith", 1972);
 
 
 
-        Human child1 = new Human("Elsad", "Huseynov", 1998, 88, pet1, mother, father);
-        Human child2 = new Human("Kenan","Sultanov",1999,91,pet2,mother,father);
-        Human child3 = new Human("Elmeddin", "Pasayev",1998,93,pet1,mother,father);
+        Human child1 = new Human("Leo", "Smith", 1998, 88, pet1, mother, father);
+        Human child2 = new Human("Harry","Smith",1999,91,pet2,mother,father);
+        Human child3 = new Human("Helen", "Smith",1998,93,pet1,mother,father);
 
         //System.out.println(child1.toString());
 
@@ -45,11 +45,6 @@ public class MainClass {
         System.out.println("--------------------------------------");
         System.out.println(family1.toString());
         System.out.println("Family count : "+ family1.family_count());
-
-        Family family2 = new Family(father,mother,children,pet1);
-        Family family3 = new Family(father,mother,children,pet1);
-        System.out.println(family2.equals(family3));
-
 
         family1.finalize();
 
