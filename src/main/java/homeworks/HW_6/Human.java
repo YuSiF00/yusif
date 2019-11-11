@@ -1,5 +1,7 @@
 package homeworks.HW_6;
 
+import java.util.Map;
+
 public class Human {
     private String name;
     private String surname;
@@ -8,6 +10,7 @@ public class Human {
     private Pet pet;
     private Human mother;
     private Human father;
+    private Map<DayOfWeek, String> schedule;
 
 
     public Human() {
@@ -35,6 +38,17 @@ public class Human {
         this.pet = pet;
         this.mother = mother;
         this.father = father;
+    }
+
+    public Human(String name, String surname, int date_of_birthday, int iq, Pet pet, Human mother, Human father, Map<DayOfWeek, String> schedule) {
+        this.name = name;
+        this.surname = surname;
+        this.date_of_birthday = date_of_birthday;
+        this.iq = iq;
+        this.pet = pet;
+        this.mother = mother;
+        this.father = father;
+        this.schedule = schedule;
     }
 
     public String getName() {
@@ -93,11 +107,19 @@ public class Human {
         this.father = father;
     }
 
-    public void greetPet(Pet pet){
+    public void greetPet(Pet pet) {
         System.out.println("Hello, " + pet.getNickname());
     }
 
-    public void describePet(Pet pet){
+    public Map<DayOfWeek, String> getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(Map<DayOfWeek, String> schedule) {
+        this.schedule = schedule;
+    }
+
+    public void describePet(Pet pet) {
         if (pet.getTrickLevel() > 50) {
             System.out.println("I have a " + pet.getSpecies() + ", he is " + pet.getAge() + " years old, he is very sly");
         } else {
@@ -121,6 +143,7 @@ public class Human {
                 ", pet=" + pet +
                 ", mother=" + mother.name +
                 ", father=" + father.name +
+                ", schedule=" + schedule +
                 '}';
     }
 }
