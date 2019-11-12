@@ -12,9 +12,9 @@ public class Homework_2 {
 
         int a;
         int b;
+        a = random.nextInt(6);
+        b = random.nextInt(6);
         while(true){
-            a = random.nextInt(6);
-            b = random.nextInt(6);
             if(a!=0&&b!=0){
                 break;
             }
