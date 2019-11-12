@@ -1,4 +1,4 @@
-package homeworks.HW_6;
+package homeworks.HW_8;
 
 public enum DayOfWeek {
     MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY;

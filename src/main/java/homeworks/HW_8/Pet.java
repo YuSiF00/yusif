@@ -1,20 +1,22 @@
-package homeworks.HW_6;
+package homeworks.HW_8;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Pet {
     private Species species;
     private String nickname;
     private int age;
     private int trickLevel;
-    private String[] habits;
+    private HashSet<String> habits;
 
     public Pet(Species species, String nickname) {
         this.species = species;
         this.nickname = nickname;
     }
 
-    public Pet(Species species, String nickname, int age, int trickLevel, String[] habits) {
+    public Pet(Species species, String nickname, int age, int trickLevel, HashSet<String> habits) {
         this.species = species;
         this.nickname = nickname;
         this.age = age;
@@ -25,13 +27,14 @@ public class Pet {
     public void eat() {
         System.out.println("I am eating");
     }
+
     public void respond() {
         System.out.println("Hello, owner. I am - " + this.nickname + ". I miss you!");
     }
+
     public static void foul() {
         System.out.println("I need to cover it up");
     }
-
 
 
     public Species getSpecies() {
@@ -66,11 +69,11 @@ public class Pet {
         this.trickLevel = trickLevel;
     }
 
-    public String[] getHabits() {
+    public HashSet<String> getHabits() {
         return habits;
     }
 
-    public void setHabits(String[] habits) {
+    public void setHabits(HashSet<String> habits) {
         this.habits = habits;
     }
 
@@ -82,11 +85,12 @@ public class Pet {
 
     @Override
     public String toString() {
-        return this.species + "{" +
-                "nickname='" + nickname + '\'' +
+        return "Pet{" +
+                "species=" + species +
+                ", nickname='" + nickname + '\'' +
                 ", age=" + age +
                 ", trickLevel=" + trickLevel +
-                ", habits=" + Arrays.toString(habits) +
+                ", habits=" + habits +
                 '}';
     }
 }
