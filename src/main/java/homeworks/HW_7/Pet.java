@@ -4,19 +4,19 @@ public abstract class Pet {
 
 
     private Species species;
-    private String nickname;
+    private String nickName;
     private int age;
     private int trickLevel;
     private String[] habits;
 
-    public Pet(Species species, String nickname) {
+    public Pet(Species species, String nickName) {
         this.species = species;
-        this.nickname = nickname;
+        this.nickName = nickName;
     }
 
-    public Pet(Species species, String nickname, int age, int trickLevel, String[] habits) {
+    public Pet(Species species, String nickName, int age, int trickLevel, String[] habits) {
         this.species = species;
-        this.nickname = nickname;
+        this.nickName = nickName;
         this.age = age;
         this.trickLevel = trickLevel;
         this.habits = habits;
@@ -36,12 +36,12 @@ public abstract class Pet {
         this.species = species;
     }
 
-    public String getNickname() {
-        return nickname;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public int getAge() {

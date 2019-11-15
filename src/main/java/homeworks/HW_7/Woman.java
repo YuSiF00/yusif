@@ -2,21 +2,22 @@ package homeworks.HW_7;
 
 public class Woman extends Human {
 
-    public Woman(String name, String surname, int date_of_birthday) {
-        super(name, surname, date_of_birthday);
+
+    public Woman(String name, String surname, int dateOfBirthday) {
+        super(name, surname, dateOfBirthday);
     }
 
-    public Woman(String name, String surname, int date_of_birthday, Human mother, Human father) {
-        super(name, surname, date_of_birthday, mother, father);
+    public Woman(String name, String surname, int dateOfBirthday, Human mother, Human father) {
+        super(name, surname, dateOfBirthday, mother, father);
     }
 
-    public Woman(String name, String surname, int date_of_birthday, int iq, Pet pet, Human mother, Human father) {
-        super(name, surname, date_of_birthday, iq, pet, mother, father);
+    public Woman(String name, String surname, int dateOfBirthday, int iq, Pet pet, Human mother, Human father) {
+        super(name, surname, dateOfBirthday, iq, pet, mother, father);
     }
 
     @Override
     void greetPet(Pet pet) {
-        System.out.println("Hello, " + pet.getNickname() + " I'm a woman");
+        System.out.println("Hello, " + pet.getNickName() + " I'm a woman");
     }
 
     void makeUp() {

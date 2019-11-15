@@ -1,6 +1,6 @@
 package homeworks.HW_7;
 
-public class Dog extends Pet implements PetInterface {
+public class Dog extends Pet implements Foulable {
     public Dog(Species species, String nickname) {
         super(species, nickname);
     }
@@ -16,7 +16,7 @@ public class Dog extends Pet implements PetInterface {
 
     @Override
     void respond() {
-        System.out.println("Hello, owner. I am - " + this.getNickname() + ". I miss you!");
+        System.out.println("Hello, owner. I am - " + this.getNickName() + ". I miss you!");
     }
 
 

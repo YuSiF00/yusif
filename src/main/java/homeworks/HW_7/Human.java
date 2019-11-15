@@ -3,30 +3,30 @@ package homeworks.HW_7;
 public class Human {
     private String name;
     private String surname;
-    private int date_of_birthday;
+    private int dateOfBirthday;
     private int iq;
     private Pet pet;
     private Human mother;
     private Human father;
 
-    public Human(String name, String surname, int date_of_birthday) {
+    public Human(String name, String surname, int dateOfBirthday) {
         this.name = name;
         this.surname = surname;
-        this.date_of_birthday = date_of_birthday;
+        this.dateOfBirthday = dateOfBirthday;
     }
 
-    public Human(String name, String surname, int date_of_birthday, Human mother, Human father) {
+    public Human(String name, String surname, int dateOfBirthday, Human mother, Human father) {
         this.name = name;
         this.surname = surname;
-        this.date_of_birthday = date_of_birthday;
+        this.dateOfBirthday = dateOfBirthday;
         this.mother = mother;
         this.father = father;
     }
 
-    public Human(String name, String surname, int date_of_birthday, int iq, Pet pet, Human mother, Human father) {
+    public Human(String name, String surname, int dateOfBirthday, int iq, Pet pet, Human mother, Human father) {
         this.name = name;
         this.surname = surname;
-        this.date_of_birthday = date_of_birthday;
+        this.dateOfBirthday = dateOfBirthday;
         this.iq = iq;
         this.pet = pet;
         this.mother = mother;
@@ -53,12 +53,12 @@ public class Human {
         this.surname = surname;
     }
 
-    public int getDate_of_birthday() {
-        return date_of_birthday;
+    public int getDateOfBirthday() {
+        return dateOfBirthday;
     }
 
-    public void setDate_of_birthday(int date_of_birthday) {
-        this.date_of_birthday = date_of_birthday;
+    public void setDateOfBirthday(int dateOfBirthday) {
+        this.dateOfBirthday = dateOfBirthday;
     }
 
     public int getIq() {
@@ -98,11 +98,11 @@ public class Human {
         return "Human{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", date_of_birthday=" + date_of_birthday +
+                ", dateOfBirthday=" + dateOfBirthday +
                 ", iq=" + iq +
                 ", pet=" + pet +
-                ", mother=" + mother.name +
-                ", father=" + father.name +
+                ", mother=" + mother +
+                ", father=" + father +
                 '}';
     }
 }
